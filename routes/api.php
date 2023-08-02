@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/calculate-distance', [DistanceController::class, 'calculateDistance']);
+Route::post('/get-location-data', [DistanceController::class, 'getLocationFromCoordinates']);
